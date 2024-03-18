@@ -31,3 +31,7 @@ Lastly, the HTTP response is written back to the `TcpStream` using the `write_al
 We refactor the code using `if` and `else` to reduce repetition.
 
 ![Commit 3 screen capture](/assets/images/commit3.png)
+
+### Commit 4
+
+If we use the / URL, itll respond quickly. But if you use /sleep, it will `sleep` for 10 seconds before it starts loading the page.
