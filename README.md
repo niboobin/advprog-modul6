@@ -35,3 +35,7 @@ We refactor the code using `if` and `else` to reduce repetition.
 ### Commit 4
 
 If we use the / URL, itll respond quickly. But if you use /sleep, it will `sleep` for 10 seconds before it starts loading the page.
+
+### Commit 5
+
+A thread pool is a way of managing multiple threads to perform tasks in parallel. This is particularly useful for tasks that can be broken down into smaller, independent tasks.
