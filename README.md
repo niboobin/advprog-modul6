@@ -39,3 +39,9 @@ If we use the / URL, itll respond quickly. But if you use /sleep, it will `sleep
 ### Commit 5
 
 A thread pool is a way of managing multiple threads to perform tasks in parallel. This is particularly useful for tasks that can be broken down into smaller, independent tasks.
+
+### Bonus Commit
+
+The `build` function will have the same functionality as `new`, but it will return a Result instead of panicking when the size is zero. 
+
+The difference between `new` and `build` is how they handle the case when size is zero. The `new` function uses `assert!` to panic if size is zero, while build returns an `Err` value.
