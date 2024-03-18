@@ -25,3 +25,9 @@ The `contents` variable is set to the contents of the `hello.html` file. This fi
 Lastly, the HTTP response is written back to the `TcpStream` using the `write_all` method. The `unwrap` method is used to handle any potential errors from writing to the stream.
 
 ![Commit 2 screen capture](/assets/images/commit2.png)
+
+### Commit 3
+
+We refactor the code using `if` and `else` to reduce repetition.
+
+![Commit 3 screen capture](/assets/images/commit3.png)
