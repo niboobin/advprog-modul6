@@ -12,3 +12,16 @@ Finally, `collect` method converts the iterator and collect the lines into a Vec
 
 The last line of the function prints out the `http_request` vector. the `{:#?}` format specifier used to pretty-print the vector.
 
+### Commit 2
+
+`status_line` is set to "HTTP/1.1 200 OK", which represents a successful HTTP response status line. 
+
+The `contents` variable is set to the contents of the `hello.html` file. This file is read from the file system using `fs::read_to_string`. The `unwrap` method is used to handle any potential errors from reading the file.
+
+`length` variable is set to the length of the contents, which represents the size of the HTTP response body.
+
+`response` is set to a formatted string that includes the status line, the content length, and the contents of the "hello.html" file.
+
+Lastly, the HTTP response is written back to the `TcpStream` using the `write_all` method. The `unwrap` method is used to handle any potential errors from writing to the stream.
+
+![Commit 2 screen capture](/assets/images/commit2.png)
